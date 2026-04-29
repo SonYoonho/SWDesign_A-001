@@ -14,10 +14,10 @@ classDiagram
 
     class Account {
         - number: String
-        - balance: long
-        + deposit(id: String, amount: long) long
-        + withdraw(id: String, amount: long) long
-        + transfer(id: String, targetAccountNumber: String, amount: long) Boolean
+        - balance: double
+        + deposit(number: String, balance: double) double
+        + withdraw(number: String, balance: double) double
+        + transfer(number: String, targetAccountNumber: String, balance: long) Boolean
         + computeBalance() long
     }
 
